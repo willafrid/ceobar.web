@@ -7,7 +7,9 @@ tailwind.config =
       theme: {
         extend: {
           fontFamily: {
-            
+            sans: ['Lato', 'sans-serif'], // Основной шрифт для всего проекта
+            lato: ['Lato', 'sans-serif'], // Дополнительный класс font-lato
+            semibold: [],
           },
           fontSize: {
             
