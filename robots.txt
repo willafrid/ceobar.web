@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /temp/
+Disallow: /*.pdf$
+
+Sitemap: https://ceobar.ru/sitemap.xml
