@@ -34,8 +34,8 @@
 <!-- Open Graph разметка для соцсетей -->
 <meta property="og:title" content="CEO BAR - Стильный гастро-бар в Великом Новгороде">
 <meta property="og:description" content="Европейская и азиатская кухня, авторские коктейли, живая музыка в историческом центре города">
-<meta property="og:image" content="https://ceobar.ru/head-30.png">
-<meta property="og:url" content="https://ceobar.ru/">
+<meta property="og:image" content="https://ceobar.rest/head-30.png">
+<meta property="og:url" content="https://ceobar.rest/">
 <meta property="og:type" content="restaurant">
 <meta property="og:locale" content="ru_RU">
 
@@ -43,7 +43,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="CEO BAR - Стильный гастро-бар в Великом Новгороде">
 <meta name="twitter:description" content="Европейская и азиатская кухня, авторские коктейли, живая музыка">
-<meta name="twitter:image" content="https://ceobar.ru/head-30.png">
+<meta name="twitter:image" content="https://ceobar.rest/head-30.png">
 
 <!-- Локальный бизнес разметка -->
 <script type="application/ld+json">
@@ -51,7 +51,7 @@
     "@context": "https://schema.org",
     "@type": "Restaurant",
     "name": "CEO BAR",
-    "image": "https://ceobar.ru/group0.svg",
+    "image": "https://ceobar.rest/group0.svg",
     "description": "Стильный гастро-бар в историческом центре Великого Новгорода",
     "address": {
       "@type": "PostalAddress",
@@ -179,13 +179,16 @@
       max-width: 90vw;
       max-height: 90vh;
       border-radius: 12px;
-      overflow: hidden;
+      overflow: visible;
   }
   
   .modal img {
-      width: 100%;
-      height: auto;
       display: block;
+      width: 100%;
+      height: 100%;
+      max-width: 90vw;
+      max-height: 90vh;
+      object-fit: contain;
   }
   
   .close {
@@ -279,54 +282,74 @@
     </div>
   </section>
 
-  <!-- Секция меню кухни -->
-  <section id="menu" class="bg-[#e3deda] rounded-xl mx-3 my-6 p-6">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-      <div>
-        <p class="text-[#2e2c2f] text-sm leading-relaxed mb-6">
-          Меню CEO BAR акцентирует внимание на классической кухне Европы и Азии,
-          добавляя в рецептуру блюд авторский подход и современные тренды.
-        </p>
-        <a href="/files/Osnovnoe_menyu.pdf" target="_blank" class="block bg-[#db9e5e] text-[#e3deda] py-3 px-6 rounded-lg font-semibold hover:bg-[#c98f50] transition duration-200 text-center">
-          Меню Кухня
-        </a>
-      </div>
-      <div class="flex flex-row space-x-4">
-        <div class="w-32 h-32 mx-fix bg-gray-200 rounded-lg overflow-hidden">
-          <img src="mask-group15.jpeg" alt="Блюдо из меню CEO BAR" class="w-full h-full object-cover"/>
-        </div>
-        <div class="w-32 h-32 mx-auto bg-gray-200 rounded-lg overflow-hidden">
-          <img src="mask-group14.jpeg" alt="Блюдо из меню CEO BAR" class="w-full h-full object-cover"/>
-        </div>
-      </div>
+<!-- Секция меню кухни -->
+<section id="menu" class="bg-[#e3deda] rounded-xl mx-3 my-6 p-6">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+    <div>
+      <p class="text-[#2e2c2f] text-sm leading-relaxed mb-6">
+        Меню CEO BAR акцентирует внимание на классической кухне Европы и Азии,
+        добавляя в рецептуру блюд авторский подход и современные тренды.
+      </p>
+      <a href="/files/Osnovnoe_menyu.pdf" target="_blank"
+         class="block bg-[#db9e5e] text-[#e3deda] py-3 px-6 rounded-lg font-semibold hover:bg-[#c98f50] transition duration-200 text-center">
+        Меню Кухня
+      </a>
     </div>
-  </section>
 
-  <!-- Секция меню бара -->
-  <section class="bg-[#e3deda] rounded-xl mx-3 my-6 p-6">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-      <div>
-        <p class="text-[#2e2c2f] text-sm leading-relaxed mb-6">
-          Барная карта объединяет несколько разделов коктейлей: от классики до смелых
-          экспериментов миксологов CEO BAR, а также достойную коллекцию вин и крепких
-          напитков с богатой историей.<br/><br/>
-          Оценить многогранность вкуса сезонных продуктов можно в спешлах от
-          бренд-шефа и команды бартендеров.
-        </p>
-        <a href="/files/Barnaya_karta.pdf" target="_blank" class="block bg-[#db9e5e] text-[#e3deda] py-3 px-6 rounded-lg font-semibold hover:bg-[#c98f50] transition duration-200 text-center">
-          Меню Бар
-        </a>
+    <!-- Адаптивная сетка из 4 картинок -->
+    <div class="grid grid-cols-2 gap-3 sm:gap-4">
+      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden">
+        <img src="pic/mask-group15.jpg" alt="Блюдо из меню CEO BAR" class="w-full h-full object-cover"/>
       </div>
-      <div class="flex flex-row space-x-4">
-        <div class="w-32 h-32 mx-fix bg-gray-200 rounded-lg overflow-hidden">
-          <img src="mask-group17.svg" alt="Напиток из меню CEO BAR" class="w-full h-full object-cover"/>
-        </div>
-        <div class="w-32 h-32 mx-auto bg-gray-200 rounded-lg overflow-hidden">
-          <img src="mask-group16.jpeg" alt="Напиток из меню CEO BAR" class="w-full h-full object-cover"/>
-        </div>
+      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden">
+        <img src="pic/mask-group14.jpg" alt="Блюдо из меню CEO BAR" class="w-full h-full object-cover"/>
+      </div>
+      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden">
+        <img src="pic/mask-group13.jpg" alt="Блюдо из меню CEO BAR" class="w-full h-full object-cover"/>
+      </div>
+      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden">
+        <img src="pic/mask-group12.jpg" alt="Блюдо из меню CEO BAR" class="w-full h-full object-cover"/>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
+<!-- Секция меню бара -->
+<section class="bg-[#e3deda] rounded-xl mx-3 my-6 p-6">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+    <div>
+      <p class="text-[#2e2c2f] text-sm leading-relaxed mb-6">
+        Барная карта объединяет несколько разделов коктейлей: от классики до смелых
+        экспериментов миксологов CEO BAR, а также достойную коллекцию вин и крепких
+        напитков с богатой историей.<br/><br/>
+        Оценить многогранность вкуса сезонных продуктов можно в спешлах от
+        бренд-шефа и команды бартендеров.
+      </p>
+      <a href="/files/Barnaya_karta.pdf" target="_blank"
+         class="block bg-[#db9e5e] text-[#e3deda] py-3 px-6 rounded-lg font-semibold hover:bg-[#c98f50] transition duration-200 text-center">
+        Меню Бар
+      </a>
+    </div>
+
+    <!-- Адаптивная сетка из 4 картинок -->
+    <div class="grid grid-cols-2 gap-3 sm:gap-4">
+      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden">
+        <img src="pic/mask-group17.jpg" alt="Напиток из меню CEO BAR" class="w-full h-full object-cover"/>
+      </div>
+      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden">
+        <img src="pic/mask-group16.jpg" alt="Напиток из меню CEO BAR" class="w-full h-full object-cover"/>
+      </div>
+      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden">
+        <img src="pic/mask-group18.jpg" alt="Напиток из меню CEO BAR" class="w-full h-full object-cover"/>
+      </div>
+      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden">
+        <img src="pic/mask-group19.jpg" alt="Напиток из меню CEO BAR" class="w-full h-full object-cover"/>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- Секция контактов -->
   <section class="bg-[#e3deda] rounded-xl mx-3 my-6 p-6">
@@ -361,7 +384,7 @@
           <h2 class="text-[#e3deda] text-center font-semibold">РЕЖИМ РАБОТЫ</h2>
         </div>
         <div class="bg-gray-200 rounded-lg h-40 mb-4 overflow-hidden">
-          <img src="mask-group13.svg" alt="Интерьер" class="w-full h-full object-cover"/>
+          <img src="mask-group12.svg" alt="Интерьер" class="w-full h-full object-cover"/>
         </div>
         <div class="text-center text-xs font-semibold">
           <p>ул. Троицкая, 3</p>
@@ -379,28 +402,24 @@
     </div>
   </section>
 
-  <!-- Секция обеда -->
-  <section id="lunch" class="bg-[#e3deda] rounded-xl mx-3 my-6 p-6">
-    <div class="bg-[#2e2c2f] rounded-xl p-4 mb-4">
-      <h2 class="text-[#e3deda] text-center font-semibold">ОБЕД В CEO BAR</h2>
-    </div>
-    <div class="grid grid-cols-3 gap-4 mb-4">
-      <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden">
-        <img src="mask-group18.jpeg" alt="Обед" class="w-full h-full object-cover"/>
-      </div>
-      <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden">
-        <img src="mask-group19.jpeg" alt="Обед" class="w-full h-full object-cover"/>
-      </div>
-      <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden">
-        <img src="mask-group20.jpeg" alt="Обед" class="w-full h-full object-cover"/>
-      </div>
-    </div>
-    <p class="text-[#2e2c2f] text-sm leading-relaxed">
-      Обеденные сеты доступны к заказу в четверг и пятницу с 12:00 до 16:00<br/>
-      Обеденный сет включает салат, суп, горячее, напиток. Стоимость 500 рублей.<br/>
-      Меню ежедневно обновляется, актуальную информацию можно найти в наших социальных сетях.
-    </p>
-  </section>
+<!-- Секция обеда -->
+<section id="lunch" class="bg-[#e3deda] rounded-xl mx-3 my-6 p-6">
+  <div class="bg-[#2e2c2f] rounded-xl p-4 mb-4">
+    <h2 class="text-[#e3deda] text-center font-semibold">ОБЕД В CEO BAR</h2>
+  </div>
+
+  <!-- Одна горизонтальная картинка -->
+  <div class="aspect-[3/1.5] bg-gray-200 rounded-lg overflow-hidden mb-4">
+    <img src="pic/mask-group20.jpg" alt="Обед" class="w-full h-full object-cover"/>
+  </div>
+
+  <p class="text-[#2e2c2f] text-sm leading-relaxed">
+    Обеденные сеты доступны к заказу в четверг и пятницу с 12:00 до 16:00<br/>
+    Обеденный сет включает салат, суп, горячее, напиток. Стоимость 500 рублей.<br/>
+    Меню ежедневно обновляется, актуальную информацию можно найти в наших социальных сетях.
+  </p>
+</section>
+
 
   <!-- Секция банкетов -->
   <section class="relative mx-3 my-6 rounded-xl overflow-hidden h-[402px]">
@@ -426,39 +445,42 @@
     </div>
   </section>
 
-  <!-- Секция событий -->
+<!-- Секция событий -->
 <section class="bg-[#e3deda] rounded-xl mx-3 my-6 p-6">
-    <div class="bg-[#2e2c2f] rounded-xl p-4 mb-4">
-      <h2 class="text-[#e3deda] text-center font-semibold">СОБЫТИЯ</h2>
+  <div class="bg-[#2e2c2f] rounded-xl p-4 mb-4">
+    <h2 class="text-[#e3deda] text-center font-semibold">СОБЫТИЯ</h2>
+  </div>
+
+  <div class="grid grid-cols-2 gap-4 mb-4">
+    <div class="aspect-[4/5] bg-gray-200 rounded-lg overflow-hidden">
+      <img src="mask-group28.jpg" 
+           alt="События" 
+           class="w-full h-full object-cover clickable-image" 
+           onclick="openModal('modal1')"/>
     </div>
-    <div class="grid grid-cols-2 gap-4 mb-4">
-      <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden">
-        <img src="mask-group28.jpg" 
-             alt="События" 
-             class="w-full h-full object-cover clickable-image" 
-             onclick="openModal('modal1')"/>
-      </div>
-      <div class="bg-[#2e2c2f] rounded-xl p-4 flex items-center">
-        <p class="text-[#e3deda] text-xs text-center">
-          В четверг, пятницу и субботу зал CEO BAR превращается в концертную площадку с живыми выступлениями, виниловыми мелодиями и диджеями с 23:00. Лайн-ап обновляется еженедельно – следите за новостями!
-        </p>
-      </div>
+    <div class="bg-[#2e2c2f] rounded-xl p-4 flex items-center">
+      <p class="text-[#e3deda] text-xs text-center">
+        В четверг, пятницу и субботу зал CEO BAR превращается в концертную площадку с живыми выступлениями, виниловыми мелодиями и диджеями с 23:00. Лайн-ап обновляется еженедельно – следите за новостями!
+      </p>
     </div>
-    <div class="grid grid-cols-2 gap-4">
-      <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden">
-        <img src="mask-group29.jpg" 
-             alt="События" 
-             class="w-full h-full object-cover clickable-image" 
-             onclick="openModal('modal2')"/>
-      </div>
-      <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden">
-        <img src="mask-group30.jpg" 
-             alt="События" 
-             class="w-full h-full object-cover clickable-image" 
-             onclick="openModal('modal3')"/>
-      </div>
+  </div>
+
+  <div class="grid grid-cols-2 gap-4">
+    <div class="aspect-[4/5] bg-gray-200 rounded-lg overflow-hidden">
+      <img src="mask-group29.jpg" 
+           alt="События" 
+           class="w-full h-full object-cover clickable-image" 
+           onclick="openModal('modal2')"/>
     </div>
+    <div class="aspect-[4/5] bg-gray-200 rounded-lg overflow-hidden">
+      <img src="mask-group30.jpg" 
+           alt="События" 
+           class="w-full h-full object-cover clickable-image" 
+           onclick="openModal('modal3')"/>
+    </div>
+  </div>
 </section>
+
 
 <!-- Модальные окна -->
 <div id="modal1" class="modal" onclick="closeModal('modal1')">
