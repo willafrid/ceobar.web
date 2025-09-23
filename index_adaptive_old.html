@@ -20,11 +20,6 @@
 <meta charset="utf-8"/>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-
-<!-- Предзагрузка критических ресурсов -->
-<link rel="preload" as="image" href="head-30.png">
-<link rel="preload" as="image" href="group0.svg">
-
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"/>
@@ -219,28 +214,6 @@
         .clickable-image:hover {
             transform: scale(1.05);
         }
-
-        /* Placeholder для изображений во время загрузки */
-        .img-placeholder {
-            background: linear-gradient(90deg, #e3deda 25%, #f0ebe7 50%, #e3deda 75%);
-            background-size: 200% 100%;
-            animation: loading 1.5s infinite;
-        }
-        
-        @keyframes loading {
-            0% { background-position: 200% 0; }
-            100% { background-position: -200% 0; }
-        }
-        
-        /* Fade-in эффект для загруженных изображений */
-        img.loaded {
-            opacity: 1;
-            transition: opacity 0.3s ease;
-        }
-        
-        img.lazy {
-            opacity: 0;
-        }
 </style>
 <title>CEO BAR — гастро-бар в Великом Новгороде | Меню, доставка, бронирование</title>
 </head>
@@ -272,7 +245,7 @@
         <div class="flex justify-between items-center text-xs px-4 py-2">
             <div class="flex items-center">
                 <div class="w-11 h-12 mr-4">
-                    <img src="group0.svg" alt="Логотип" loading="eager"/>
+                    <img src="group0.svg" alt="Логотип"/>
                 </div>
             </div>
             <div class="flex space-x-4">
@@ -286,7 +259,7 @@
     </nav>
   <!-- Главная секция -->
   <section class="relative h-[577px] mt-16 mx-3 rounded-xl overflow-hidden">
-    <img class="w-full h-full object-cover" src="head-30.png" alt="CEO BAR Интерьер" loading="eager"/>
+    <img class="w-full h-full object-cover" src="head-30.png" alt="CEO BAR Интерьер"/>
     <div class="absolute inset-0 bg-black/40"></div>
     <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-8">
       <h1 class="text-2xl md:text-3xl lg:text-4xl leading-tight mb-8 font-light">
@@ -326,17 +299,17 @@
 
     <!-- Адаптивная сетка из 4 картинок -->
     <div class="grid grid-cols-2 gap-3 sm:gap-4">
-      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden img-placeholder">
-        <img src="pic/mask-group15.jpg" alt="Блюдо из меню CEO BAR" class="w-full h-full object-cover lazy" loading="lazy"/>
+      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden">
+        <img src="pic/mask-group15.jpg" alt="Блюдо из меню CEO BAR" class="w-full h-full object-cover"/>
       </div>
-      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden img-placeholder">
-        <img src="pic/mask-group14.jpg" alt="Блюдо из меню CEO BAR" class="w-full h-full object-cover lazy" loading="lazy"/>
+      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden">
+        <img src="pic/mask-group14.jpg" alt="Блюдо из меню CEO BAR" class="w-full h-full object-cover"/>
       </div>
-      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden img-placeholder">
-        <img src="pic/mask-group13.jpg" alt="Блюдо из меню CEO BAR" class="w-full h-full object-cover lazy" loading="lazy"/>
+      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden">
+        <img src="pic/mask-group13.jpg" alt="Блюдо из меню CEO BAR" class="w-full h-full object-cover"/>
       </div>
-      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden img-placeholder">
-        <img src="pic/mask-group12.jpg" alt="Блюдо из меню CEO BAR" class="w-full h-full object-cover lazy" loading="lazy"/>
+      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden">
+        <img src="pic/mask-group12.jpg" alt="Блюдо из меню CEO BAR" class="w-full h-full object-cover"/>
       </div>
     </div>
   </div>
@@ -362,17 +335,17 @@
 
     <!-- Адаптивная сетка из 4 картинок -->
     <div class="grid grid-cols-2 gap-3 sm:gap-4">
-      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden img-placeholder">
-        <img src="pic/mask-group17.jpg" alt="Напиток из меню CEO BAR" class="w-full h-full object-cover lazy" loading="lazy"/>
+      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden">
+        <img src="pic/mask-group17.jpg" alt="Напиток из меню CEO BAR" class="w-full h-full object-cover"/>
       </div>
-      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden img-placeholder">
-        <img src="pic/mask-group19.jpg" alt="Напиток из меню CEO BAR" class="w-full h-full object-cover lazy" loading="lazy"/>
+      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden">
+        <img src="pic/mask-group19.jpg" alt="Напиток из меню CEO BAR" class="w-full h-full object-cover"/>
       </div>
-      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden img-placeholder">
-        <img src="pic/mask-group16.jpg" alt="Напиток из меню CEO BAR" class="w-full h-full object-cover lazy" loading="lazy"/>
+      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden">
+        <img src="pic/mask-group16.jpg" alt="Напиток из меню CEO BAR" class="w-full h-full object-cover"/>
       </div>
-      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden img-placeholder">
-        <img src="pic/mask-group18.jpg" alt="Напиток из меню CEO BAR" class="w-full h-full object-cover lazy" loading="lazy"/>
+      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden">
+        <img src="pic/mask-group18.jpg" alt="Напиток из меню CEO BAR" class="w-full h-full object-cover"/>
       </div>
     </div>
   </div>
@@ -384,11 +357,11 @@
   </div>
 
     <div class="grid grid-cols-2 gap-3 sm:gap-4">
-      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden img-placeholder">
-        <img src="pic/ny1.jpg" alt="Новогоднее оформление CEO BAR" class="w-full h-full object-cover lazy" loading="lazy"/>
+      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden">
+        <img src="pic/ny1.jpg" alt="Напиток из меню CEO BAR" class="w-full h-full object-cover"/>
       </div>
-      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden img-placeholder">
-        <img src="pic/ny2.jpg" alt="Новогоднее празднование CEO BAR" class="w-full h-full object-cover lazy" loading="lazy"/>
+      <div class="aspect-square w-full bg-gray-200 rounded-lg overflow-hidden">
+        <img src="pic/ny2.jpg" alt="Напиток из меню CEO BAR" class="w-full h-full object-cover"/>
       </div>
     </div>
     <br/>
@@ -450,8 +423,8 @@
         <div class="bg-[#2e2c2f] rounded-xl p-4 mb-4">
           <h2 class="text-[#e3deda] text-center font-semibold">РЕЖИМ РАБОТЫ</h2>
         </div>
-        <div class="bg-gray-200 rounded-lg h-40 mb-4 overflow-hidden img-placeholder">
-          <img src="mask-group12.svg" alt="Интерьер" class="w-full h-full object-cover lazy" loading="lazy"/>
+        <div class="bg-gray-200 rounded-lg h-40 mb-4 overflow-hidden">
+          <img src="mask-group12.svg" alt="Интерьер" class="w-full h-full object-cover"/>
         </div>
         <div class="text-center text-xs font-semibold">
           <p>ул. Троицкая, 3</p>
@@ -476,8 +449,8 @@
   </div>
 
   <!-- Одна горизонтальная картинка -->
-  <div class="aspect-[3/1.8] bg-gray-200 rounded-lg overflow-hidden mb-4 img-placeholder">
-    <img src="pic/mask-group20.jpg" alt="Обед в CEO BAR" class="w-full h-full object-cover lazy" loading="lazy"/>
+  <div class="aspect-[3/1.8] bg-gray-200 rounded-lg overflow-hidden mb-4">
+    <img src="pic/mask-group20.jpg" alt="Обед" class="w-full h-full object-cover"/>
   </div>
 
   <p class="text-[#2e2c2f] text-sm leading-relaxed">
@@ -490,7 +463,7 @@
 
   <!-- Секция банкетов -->
   <section class="relative mx-3 my-6 rounded-xl overflow-hidden h-[402px]">
-    <img src="mask-group21.svg" alt="Банкеты и мероприятия" class="w-full h-full object-cover lazy" loading="lazy"/>
+    <img src="mask-group21.svg" alt="Банкеты" class="w-full h-full object-cover"/>
     <div class="absolute top-4 left-4 right-4">
       <div class="bg-[#2e2c2f] rounded-xl p-4 mb-4">
         <h2 class="text-[#e3deda] text-center font-semibold">БАНКЕТЫ И МЕРОПРИЯТИЯ</h2>
@@ -519,11 +492,10 @@
   </div>
 
   <div class="grid grid-cols-2 gap-4 mb-4">
-    <div class="aspect-[4/5] bg-gray-200 rounded-lg overflow-hidden img-placeholder">
+    <div class="aspect-[4/5] bg-gray-200 rounded-lg overflow-hidden">
       <img src="pic/af1.jpg" 
-           alt="События в CEO BAR" 
-           class="w-full h-full object-cover clickable-image lazy" 
-           loading="lazy"
+           alt="События" 
+           class="w-full h-full object-cover clickable-image" 
            onclick="openModal('modal1')"/>
     </div>
     <div class="bg-[#2e2c2f] rounded-xl p-4 flex items-center">
@@ -534,18 +506,16 @@
   </div>
 
   <div class="grid grid-cols-2 gap-4">
-    <div class="aspect-[4/5] bg-gray-200 rounded-lg overflow-hidden img-placeholder">
+    <div class="aspect-[4/5] bg-gray-200 rounded-lg overflow-hidden">
       <img src="pic/af2.jpg" 
-           alt="События в CEO BAR" 
-           class="w-full h-full object-cover clickable-image lazy" 
-           loading="lazy"
+           alt="События" 
+           class="w-full h-full object-cover clickable-image" 
            onclick="openModal('modal2')"/>
     </div>
-    <div class="aspect-[4/5] bg-gray-200 rounded-lg overflow-hidden img-placeholder">
+    <div class="aspect-[4/5] bg-gray-200 rounded-lg overflow-hidden">
       <img src="pic/af3.jpg" 
-           alt="События в CEO BAR" 
-           class="w-full h-full object-cover clickable-image lazy" 
-           loading="lazy"
+           alt="События" 
+           class="w-full h-full object-cover clickable-image" 
            onclick="openModal('modal3')"/>
     </div>
   </div>
@@ -556,21 +526,21 @@
 <div id="modal1" class="modal" onclick="closeModal('modal1')">
     <span class="close" onclick="closeModal('modal1')">&times;</span>
     <div class="modal-content" onclick="event.stopPropagation()">
-        <img src="pic/af1.jpg" alt="События полный размер" loading="lazy">
+        <img src="pic/af1.jpg" alt="События полный размер">
     </div>
 </div>
 
 <div id="modal2" class="modal" onclick="closeModal('modal2')">
     <span class="close" onclick="closeModal('modal2')">&times;</span>
     <div class="modal-content" onclick="event.stopPropagation()">
-        <img src="pic/af2.jpg" alt="События полный размер" loading="lazy">
+        <img src="pic/af2.jpg" alt="События полный размер">
     </div>
 </div>
 
 <div id="modal3" class="modal" onclick="closeModal('modal3')">
     <span class="close" onclick="closeModal('modal3')">&times;</span>
     <div class="modal-content" onclick="event.stopPropagation()">
-        <img src="pic/af3.jpg" alt="События полный размер" loading="lazy">
+        <img src="pic/af3.jpg" alt="События полный размер">
     </div>
 </div>
 
@@ -602,7 +572,6 @@
         src="https://yandex.ru/map-widget/v1/?ll=31.278283%2C58.514747&mode=poi&poi%5Bpoint%5D=31.274018%2C58.516548&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D215421611704&z=16"
         frameborder="0" 
         allowfullscreen="true" 
-        loading="lazy"
         class="w-full h-full">
     </iframe>
   </section>
@@ -628,16 +597,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
 // Модальные окна
 function openModal(modalId) {
     document.getElementById(modalId).classList.add('active');
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden'; // Предотвращаем прокрутку фона
 }
 
 function closeModal(modalId) {
     document.getElementById(modalId).classList.remove('active');
-    document.body.style.overflow = 'auto';
+    document.body.style.overflow = 'auto'; // Восстанавливаем прокрутку
 }
 
 // Закрытие модального окна по клавише Escape
@@ -649,103 +617,6 @@ document.addEventListener('keydown', function(event) {
             document.body.style.overflow = 'auto';
         }
     }
-});
-
-// Улучшенная ленивая загрузка изображений с Intersection Observer
-const imageObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const img = entry.target;
-            
-            // Создаем новое изображение для предзагрузки
-            const imageLoader = new Image();
-            
-            imageLoader.onload = function() {
-                // Когда изображение загружено, заменяем src и добавляем анимацию
-                img.src = img.dataset.src || img.src;
-                img.classList.remove('lazy');
-                img.classList.add('loaded');
-                
-                // Убираем placeholder анимацию с родительского контейнера
-                const placeholder = img.closest('.img-placeholder');
-                if (placeholder) {
-                    placeholder.classList.remove('img-placeholder');
-                }
-            };
-            
-            imageLoader.onerror = function() {
-                // В случае ошибки загрузки, убираем placeholder
-                img.classList.remove('lazy');
-                const placeholder = img.closest('.img-placeholder');
-                if (placeholder) {
-                    placeholder.classList.remove('img-placeholder');
-                }
-            };
-            
-            // Начинаем загрузку
-            imageLoader.src = img.dataset.src || img.src;
-            observer.unobserve(img);
-        }
-    });
-}, {
-    rootMargin: '50px 0px',
-    threshold: 0.01
-});
-
-// Применяем наблюдатель к изображениям с ленивой загрузкой
-document.addEventListener('DOMContentLoaded', function() {
-    const lazyImages = document.querySelectorAll('img.lazy');
-    lazyImages.forEach(img => {
-        imageObserver.observe(img);
-    });
-});
-
-// Функция для обработки загруженных изображений
-document.addEventListener('DOMContentLoaded', function() {
-    const images = document.querySelectorAll('img');
-    
-    images.forEach(img => {
-        if (img.complete && img.naturalHeight !== 0) {
-            img.classList.add('loaded');
-            const placeholder = img.closest('.img-placeholder');
-            if (placeholder) {
-                placeholder.classList.remove('img-placeholder');
-            }
-        } else {
-            img.addEventListener('load', function() {
-                this.classList.add('loaded');
-                const placeholder = this.closest('.img-placeholder');
-                if (placeholder) {
-                    placeholder.classList.remove('img-placeholder');
-                }
-            });
-            
-            img.addEventListener('error', function() {
-                const placeholder = this.closest('.img-placeholder');
-                if (placeholder) {
-                    placeholder.classList.remove('img-placeholder');
-                }
-            });
-        }
-    });
-});
-
-// Предзагрузка критических изображений
-document.addEventListener('DOMContentLoaded', function() {
-    // Предзагружаем изображения первого экрана после загрузки основного контента
-    setTimeout(() => {
-        const criticalImages = [
-            'pic/mask-group15.jpg',
-            'pic/mask-group14.jpg',
-            'pic/mask-group17.jpg',
-            'pic/mask-group19.jpg'
-        ];
-        
-        criticalImages.forEach(src => {
-            const img = new Image();
-            img.src = src;
-        });
-    }, 1000);
 });
 </script>
 </body>
