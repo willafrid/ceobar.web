@@ -4,4 +4,4 @@ Disallow: /admin/
 Disallow: /temp/
 Disallow: /*.pdf$
 
-Sitemap: https://ceobar.ru/sitemap.xml
+Sitemap: https://ceobar.rest/sitemap.xml
