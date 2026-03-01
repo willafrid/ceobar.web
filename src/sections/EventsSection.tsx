@@ -31,6 +31,21 @@ export default function EventsSection({ onOpenModal }: EventsSectionProps) {
         title: 'ВИНИЛОВЫЕ ВЕЧЕРА',
         subtitle: 'Тёплая атмосфера и редкие подборки винила.',
       },
+      {
+        image: '/pic/af4.jpg',
+        title: 'КОНЦЕРТНЫЕ НОЧИ',
+        subtitle: 'Еженедельные выступления артистов и приглашённых гостей.',
+      },
+      {
+        image: '/pic/af5.jpg',
+        title: 'АТМОСФЕРНЫЕ СЕТЫ',
+        subtitle: 'Музыкальные форматы для позднего вечера и ночного отдыха.',
+      },
+      {
+        image: '/pic/af6.jpg',
+        title: 'СПЕЦИАЛЬНЫЕ ПРОГРАММЫ',
+        subtitle: 'Отдельные тематические вечера с обновляемым лайн-апом.',
+      },
     ],
     []
   );
@@ -64,7 +79,7 @@ export default function EventsSection({ onOpenModal }: EventsSectionProps) {
         следите за новостями!
       </p>
 
-      <div className="relative rounded-xl overflow-hidden">
+      <div className="relative rounded-xl overflow-hidden isolate">
         <div className="aspect-[4/5]">
           <img
             key={activeIndex}
@@ -80,17 +95,17 @@ export default function EventsSection({ onOpenModal }: EventsSectionProps) {
           type="button"
           onClick={handlePrev}
           aria-label="Предыдущее событие"
-          className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/40 hover:bg-white/60 transition text-[#2e2c2f] flex items-center justify-center"
+          className="absolute z-20 left-2 top-2 md:left-3 md:top-3 w-8 h-8 md:w-9 md:h-9 rounded-full bg-white/45 hover:bg-white/65 transition text-[#2e2c2f] flex items-center justify-center"
         >
-          <span className="text-2xl leading-none">&lsaquo;</span>
+          <span className="text-xl md:text-2xl leading-none">&lsaquo;</span>
         </button>
         <button
           type="button"
           onClick={handleNext}
           aria-label="Следующее событие"
-          className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/40 hover:bg-white/60 transition text-[#2e2c2f] flex items-center justify-center"
+          className="absolute z-20 right-2 top-2 md:right-3 md:top-3 w-8 h-8 md:w-9 md:h-9 rounded-full bg-white/45 hover:bg-white/65 transition text-[#2e2c2f] flex items-center justify-center"
         >
-          <span className="text-2xl leading-none">&rsaquo;</span>
+          <span className="text-xl md:text-2xl leading-none">&rsaquo;</span>
         </button>
       </div>
     </section>

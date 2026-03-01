@@ -13,22 +13,10 @@ export default function PromotionsSection() {
   const promotions = useMemo<Promotion[]>(
     () => [
       {
-        image: '/pic/promo-hot-drink.jpg',
-        title: 'ГОРЯЧИЙ НАПИТОК В ПОДАРОК',
-        subtitle:
-          'Закажите горячий напиток с собой, второй такой же приготовим бесплатно. Акция действует всю зиму.',
-      },
-      {
         image: '/pic/promo-birthday.jpg',
         title: 'ДЕНЬ РОЖДЕНИЯ',
         subtitle:
           'Дарим десерт, при оформлении предварительного заказа бутылку игристого вина. Уточнить сроки действия акции: 606-066',
-      },
-      {
-        image: '/pic/promo-cocktail-unlimited.jpg',
-        title: 'КОКТЕЙЛЬ БЕЗ ОГРАНИЧЕНИЙ',
-        subtitle:
-          'В четверг с 18:00 до 01:00 подаем коктейль без ограничений и одно блюдо. Каждую неделю предложение обновляется. Участие в акции - 1 990₽',
       },
       {
         image: '/pic/promo-to-go.jpg',
@@ -78,7 +66,7 @@ export default function PromotionsSection() {
         Следите за обновлениями раздела: здесь мы публикуем актуальные и выгодные предложения.
       </p>
 
-      <div className="relative rounded-xl overflow-hidden">
+      <div className="relative rounded-xl overflow-hidden isolate">
         <div className="aspect-[4/3]">
           <img
             key={activeIndex}
@@ -98,17 +86,17 @@ export default function PromotionsSection() {
           type="button"
           onClick={handlePrev}
           aria-label="Предыдущая акция"
-          className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/40 hover:bg-white/60 transition text-[#2e2c2f] flex items-center justify-center"
+          className="absolute z-20 left-2 top-2 md:left-3 md:top-3 w-8 h-8 md:w-9 md:h-9 rounded-full bg-white/45 hover:bg-white/65 transition text-[#2e2c2f] flex items-center justify-center"
         >
-          <span className="text-2xl leading-none">&lsaquo;</span>
+          <span className="text-xl md:text-2xl leading-none">&lsaquo;</span>
         </button>
         <button
           type="button"
           onClick={handleNext}
           aria-label="Следующая акция"
-          className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/40 hover:bg-white/60 transition text-[#2e2c2f] flex items-center justify-center"
+          className="absolute z-20 right-2 top-2 md:right-3 md:top-3 w-8 h-8 md:w-9 md:h-9 rounded-full bg-white/45 hover:bg-white/65 transition text-[#2e2c2f] flex items-center justify-center"
         >
-          <span className="text-2xl leading-none">&rsaquo;</span>
+          <span className="text-xl md:text-2xl leading-none">&rsaquo;</span>
         </button>
       </div>
     </section>
