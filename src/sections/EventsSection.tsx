@@ -5,70 +5,49 @@ type EventsSectionProps = {
   onOpenModal: (image: string) => void;
 };
 
-type EventItem = {
-  image: string;
-  title: string;
-  subtitle: string;
-};
-
 const ROTATE_INTERVAL_MS = 10000;
 
 export default function EventsSection({ onOpenModal }: EventsSectionProps) {
-  const events = useMemo<EventItem[]>(
-    () => [
-      {
-        image: '/pic/af1.jpg',
-        title: 'ЖИВЫЕ ВЫСТУПЛЕНИЯ',
-        subtitle: 'Лайв-сеты и музыка каждую неделю с 23:00.',
-      },
-      {
-        image: '/pic/af2.jpg',
-        title: 'ДИДЖЕЙ-СЕТЫ',
-        subtitle: 'Пятница и суббота — танцевальные ночи в СЕО БАР.',
-      },
-      {
-        image: '/pic/af3.jpg',
-        title: 'ВИНИЛОВЫЕ ВЕЧЕРА',
-        subtitle: 'Тёплая атмосфера и редкие подборки винила.',
-      },
-      {
-        image: '/pic/af4.jpg',
-        title: 'КОНЦЕРТНЫЕ НОЧИ',
-        subtitle: 'Еженедельные выступления артистов и приглашённых гостей.',
-      },
-      {
-        image: '/pic/af5.jpg',
-        title: 'АТМОСФЕРНЫЕ СЕТЫ',
-        subtitle: 'Музыкальные форматы для позднего вечера и ночного отдыха.',
-      },
-      {
-        image: '/pic/af6.jpg',
-        title: 'СПЕЦИАЛЬНЫЕ ПРОГРАММЫ',
-        subtitle: 'Отдельные тематические вечера с обновляемым лайн-апом.',
-      },
-    ],
-    []
-  );
+  const posters = useMemo(() => {
+    const modules = import.meta.glob('/src/assets/af*.jpg', {
+      eager: true,
+      import: 'default',
+    });
+
+    return Object.entries(modules)
+      .sort(([a], [b]) => a.localeCompare(b, 'en', { numeric: true }))
+      .map(([, url]) => url as string);
+  }, []);
 
   const [activeIndex, setActiveIndex] = useState(0);
+  const postersCount = posters.length;
 
   useEffect(() => {
+    if (postersCount < 2) {
+      return;
+    }
     const timer = window.setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % events.length);
+      setActiveIndex((prev) => (prev + 1) % postersCount);
     }, ROTATE_INTERVAL_MS);
 
     return () => window.clearInterval(timer);
-  }, [events.length]);
+  }, [postersCount]);
 
   const handlePrev = () => {
-    setActiveIndex((prev) => (prev - 1 + events.length) % events.length);
+    if (postersCount === 0) {
+      return;
+    }
+    setActiveIndex((prev) => (prev - 1 + postersCount) % postersCount);
   };
 
   const handleNext = () => {
-    setActiveIndex((prev) => (prev + 1) % events.length);
+    if (postersCount === 0) {
+      return;
+    }
+    setActiveIndex((prev) => (prev + 1) % postersCount);
   };
 
-  const current = events[activeIndex];
+  const current = posters[activeIndex] ?? posters[0];
 
   return (
     <section className="bg-[#e3deda] rounded-xl mx-3 my-6 p-6">
@@ -81,14 +60,18 @@ export default function EventsSection({ onOpenModal }: EventsSectionProps) {
 
       <div className="relative rounded-xl overflow-hidden isolate">
         <div className="aspect-[4/5]">
-          <img
-            key={activeIndex}
-            src={current.image}
-            alt={current.title}
-            className="w-full h-full object-cover promo-fade clickable-image"
-            loading="lazy"
-            onClick={() => onOpenModal(current.image)}
-          />
+          {current ? (
+            <img
+              key={activeIndex}
+              src={current}
+              alt={`Афиша ${activeIndex + 1}`}
+              className="w-full h-full object-cover promo-fade clickable-image"
+              loading="lazy"
+              onClick={() => onOpenModal(current)}
+            />
+          ) : (
+            <div className="w-full h-full bg-[#d8d2cd]" />
+          )}
         </div>
 
         <button
