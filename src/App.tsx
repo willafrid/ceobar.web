@@ -17,20 +17,20 @@ export default function App() {
 
   const kitchenImages = useMemo(
     () => [
-      { src: '/pic/mask-group15.jpg', alt: 'Блюдо из меню СЕО БАР' },
-      { src: '/pic/mask-group14.jpg', alt: 'Блюдо из меню СЕО БАР' },
-      { src: '/pic/mask-group13.jpg', alt: 'Блюдо из меню СЕО БАР' },
-      { src: '/pic/mask-group12.jpg', alt: 'Блюдо из меню СЕО БАР' },
+      { src: '/images/menu/mask-group15.jpg', alt: 'Блюдо из меню СЕО БАР' },
+      { src: '/images/menu/mask-group14.jpg', alt: 'Блюдо из меню СЕО БАР' },
+      { src: '/images/menu/mask-group13.jpg', alt: 'Блюдо из меню СЕО БАР' },
+      { src: '/images/menu/mask-group12.jpg', alt: 'Блюдо из меню СЕО БАР' },
     ],
     []
   );
 
   const barImages = useMemo(
     () => [
-      { src: '/pic/mask-group17.jpg', alt: 'Напиток из меню СЕО БАР' },
-      { src: '/pic/mask-group19.jpg', alt: 'Напиток из меню СЕО БАР' },
-      { src: '/pic/mask-group16.jpg', alt: 'Напиток из меню СЕО БАР' },
-      { src: '/pic/mask-group18.jpg', alt: 'Напиток из меню СЕО БАР' },
+      { src: '/images/menu/mask-group17.jpg', alt: 'Напиток из меню СЕО БАР' },
+      { src: '/images/menu/mask-group19.jpg', alt: 'Напиток из меню СЕО БАР' },
+      { src: '/images/menu/mask-group16.jpg', alt: 'Напиток из меню СЕО БАР' },
+      { src: '/images/menu/mask-group18.jpg', alt: 'Напиток из меню СЕО БАР' },
     ],
     []
   );
@@ -153,10 +153,10 @@ export default function App() {
   useEffect(() => {
     const timeout = window.setTimeout(() => {
       const criticalImages = [
-        '/pic/mask-group15.jpg',
-        '/pic/mask-group14.jpg',
-        '/pic/mask-group17.jpg',
-        '/pic/mask-group19.jpg',
+        '/images/menu/mask-group15.jpg',
+        '/images/menu/mask-group14.jpg',
+        '/images/menu/mask-group17.jpg',
+        '/images/menu/mask-group19.jpg',
       ];
 
       criticalImages.forEach((src) => {

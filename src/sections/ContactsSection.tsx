@@ -36,7 +36,7 @@ export default function ContactsSection() {
           <SectionHeader title="РЕЖИМ РАБОТЫ" />
           <div className="bg-gray-200 rounded-lg h-40 mb-4 overflow-hidden img-placeholder">
             <img
-              src="/mask-group12.svg"
+              src="/images/sections/mask-group12.svg"
               alt="Интерьер"
               className="w-full h-full object-cover lazy"
               loading="lazy"

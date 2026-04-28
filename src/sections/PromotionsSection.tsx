@@ -13,26 +13,21 @@ export default function PromotionsSection() {
   const promotions = useMemo<Promotion[]>(
     () => [
       {
-        image: '/pic/promo-birthday.jpg',
+        image: '/images/promotions/promo-birthday.jpg',
         title: 'ДЕНЬ РОЖДЕНИЯ',
         subtitle:
           'Дарим десерт, при оформлении предварительного заказа бутылку игристого вина. Уточнить сроки действия акции: 606-066',
       },
       {
-        image: '/pic/promo-to-go.jpg',
+        image: '/images/promotions/promo-to-go.jpg',
         title: 'С СОБОЙ ВЫГОДНО',
         subtitle: 'Действует скидка 20% на основное меню кухни при заказе блюд навынос.',
       },
       {
-        image: '/pic/promo-lunch-discount.jpg',
+        image: '/images/promotions/promo-lunch-discount.jpg',
         title: 'ОБЕДЕННАЯ СКИДКА',
         subtitle:
           'В четверг и пятницу действует скидка 20% на основное меню кухни с 12:00 до 16:00',
-      },
-      {
-        image: '/pic/promo-delivery.jpg',
-        title: 'ДОСТАВКА В ЯНДЕКС.ЕДА СО СКИДКОЙ 20%',
-        subtitle: 'При оформлении заказа в сервисе Яндекс.Еда используйте промокод SALE20',
       },
     ],
     []

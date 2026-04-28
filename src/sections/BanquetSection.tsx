@@ -4,7 +4,7 @@ export default function BanquetSection() {
   return (
     <section className="relative mx-3 my-6 rounded-xl overflow-hidden">
       <img
-        src="/mask-group21.svg"
+        src="/images/sections/mask-group21.svg"
         alt="Банкеты и мероприятия"
         className="absolute inset-0 w-full h-full object-cover lazy"
         loading="lazy"

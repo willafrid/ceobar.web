@@ -29,7 +29,7 @@ export default function NavBar() {
       <div className="flex justify-between items-center text-xs px-4 py-2">
         <div className="flex items-center">
           <div className="w-11 h-12 mr-4">
-            <img src="/group0.svg" alt="Логотип" loading="eager" />
+            <img src="/images/brand/group0.svg" alt="Логотип" loading="eager" />
           </div>
         </div>
         <div className="flex space-x-3">

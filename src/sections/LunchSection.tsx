@@ -7,7 +7,7 @@ export default function LunchSection() {
 
       <div className="aspect-[3/1.8] bg-gray-200 rounded-lg overflow-hidden mb-4 img-placeholder">
         <img
-          src="/pic/mask-group20.jpg"
+          src="/images/menu/mask-group20.jpg"
           alt="Обед в СЕО БАР"
           className="w-full h-full object-cover lazy"
           loading="lazy"

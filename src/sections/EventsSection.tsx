@@ -9,7 +9,7 @@ const ROTATE_INTERVAL_MS = 10000;
 
 export default function EventsSection({ onOpenModal }: EventsSectionProps) {
   const posters = useMemo(() => {
-    const modules = import.meta.glob('/src/assets/af*.jpg', {
+    const modules = import.meta.glob('/src/assets/af/af*.jpg', {
       eager: true,
       import: 'default',
     });
