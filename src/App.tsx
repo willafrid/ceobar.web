@@ -5,7 +5,6 @@ import Hero from './sections/Hero';
 import MenuSection from './sections/MenuSection';
 import PromotionsSection from './sections/PromotionsSection';
 import ContactsSection from './sections/ContactsSection';
-import LunchSection from './sections/LunchSection';
 import BanquetSection from './sections/BanquetSection';
 import EventsSection from './sections/EventsSection';
 import SocialSection from './sections/SocialSection';
@@ -17,10 +16,10 @@ export default function App() {
 
   const kitchenImages = useMemo(
     () => [
-      { src: '/images/menu/mask-group15.jpg', alt: 'Блюдо из меню СЕО БАР' },
-      { src: '/images/menu/mask-group14.jpg', alt: 'Блюдо из меню СЕО БАР' },
-      { src: '/images/menu/mask-group13.jpg', alt: 'Блюдо из меню СЕО БАР' },
-      { src: '/images/menu/mask-group12.jpg', alt: 'Блюдо из меню СЕО БАР' },
+      { src: '/images/menu/food1.jpg', alt: 'Блюдо из меню СЕО БАР' },
+      { src: '/images/menu/food2.jpg', alt: 'Блюдо из меню СЕО БАР' },
+      { src: '/images/menu/food3.jpg', alt: 'Блюдо из меню СЕО БАР' },
+      { src: '/images/menu/food4.jpg', alt: 'Блюдо из меню СЕО БАР' },
     ],
     []
   );
@@ -153,8 +152,8 @@ export default function App() {
   useEffect(() => {
     const timeout = window.setTimeout(() => {
       const criticalImages = [
-        '/images/menu/mask-group15.jpg',
-        '/images/menu/mask-group14.jpg',
+        '/images/menu/food1.jpg',
+        '/images/menu/food2.jpg',
         '/images/menu/mask-group17.jpg',
         '/images/menu/mask-group19.jpg',
       ];
@@ -201,8 +200,7 @@ export default function App() {
       />
       <ContactsSection />
       <PromotionsSection />
-      <LunchSection />
-      <BanquetSection />
+<BanquetSection />
       <EventsSection onOpenModal={(image) => setActiveModal(image)} />
       <SocialSection />
       <MapSection />

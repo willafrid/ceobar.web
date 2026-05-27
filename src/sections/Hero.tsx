@@ -10,11 +10,11 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/40"></div>
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-8">
         <h1 className="text-2xl md:text-3xl lg:text-4xl leading-tight mb-8 font-light">
-          Стильный<br />
-          гастро-бар<br />
-          в историческом<br />
-          центре Великого<br />
-          Новгорода
+          Сео Бар - стильный<br />
+          коктейльный бар-клуб.<br />
+          <br />
+          Работаем ежедневно<br />
+          с 18:00
         </h1>
         <div className="space-y-4 w-full max-w-sm">
           <a

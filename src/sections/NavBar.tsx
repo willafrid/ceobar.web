@@ -42,10 +42,7 @@ export default function NavBar() {
           >
             ОТЗЫВЫ
           </a>
-          <a href="#lunch" className="text-black hover:text-gray-600">
-            ОБЕД
-          </a>
-          <a href="https://831437.restoplace.ws" className="text-black hover:text-gray-600">
+<a href="https://831437.restoplace.ws" className="text-black hover:text-gray-600">
             БРОНЬ
           </a>
         </div>

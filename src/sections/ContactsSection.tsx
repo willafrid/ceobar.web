@@ -36,7 +36,7 @@ export default function ContactsSection() {
           <SectionHeader title="РЕЖИМ РАБОТЫ" />
           <div className="bg-gray-200 rounded-lg h-40 mb-4 overflow-hidden img-placeholder">
             <img
-              src="/images/sections/mask-group12.svg"
+              src="/images/sections/together.jpg"
               alt="Интерьер"
               className="w-full h-full object-cover lazy"
               loading="lazy"
@@ -45,9 +45,8 @@ export default function ContactsSection() {
           <div className="text-center text-xs font-semibold">
             <p>ул. Троицкая, 3</p>
             <br />
-            <p>ЧТ, ВС.........12:00 - 01:00</p>
-            <p>ПТ, СБ..........12:00 - 05:00</p>
-            <p>ПН, ВТ, СР..........ВЫХОДНЫЕ ДНИ</p>
+            <p>ЧТ - ВС..........18:00 - 01:00</p>
+            <p>ПТ - СБ..........18:00 - 05:00</p>
             <br />
             <p className="font-semibold">Бронь столов:</p>
             <p>+7 (911) 600 60 66</p>

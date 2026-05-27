@@ -23,12 +23,6 @@ export default function PromotionsSection() {
         title: 'С СОБОЙ ВЫГОДНО',
         subtitle: 'Действует скидка 20% на основное меню кухни при заказе блюд навынос.',
       },
-      {
-        image: '/images/promotions/promo-lunch-discount.jpg',
-        title: 'ОБЕДЕННАЯ СКИДКА',
-        subtitle:
-          'В четверг и пятницу действует скидка 20% на основное меню кухни с 12:00 до 16:00',
-      },
     ],
     []
   );
