@@ -45,8 +45,8 @@ export default function ContactsSection() {
           <div className="text-center text-xs font-semibold">
             <p>ул. Троицкая, 3</p>
             <br />
-            <p>ЧТ - ВС..........18:00 - 01:00</p>
-            <p>ПТ - СБ..........18:00 - 05:00</p>
+            <p>Пятница и суббота</p>
+            <p>21:00 - 05:00</p>
             <br />
             <p className="font-semibold">Бронь столов:</p>
             <p>+7 (911) 600 60 66</p>

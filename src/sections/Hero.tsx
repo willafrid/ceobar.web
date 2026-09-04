@@ -13,8 +13,8 @@ export default function Hero() {
           Сео Бар - стильный<br />
           коктейльный бар-клуб<br />
           <br />
-          Работаем ежедневно<br />
-          с 18:00
+          Работаем<br />
+          в пятницу и субботу с 21:00
         </h1>
         <div className="space-y-4 w-full max-w-sm">
           <a
